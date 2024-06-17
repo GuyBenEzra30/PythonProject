@@ -201,5 +201,13 @@ def main():
     else:
         print("LOSE -> the secret word was = ", secret_word)
 
+    play_again = input("Do you want to play again? (y/n): ").strip().lower()
+
+    if play_again == "y":
+        main() # Restart the game if player wants to play again
+    else:
+        print("Hope you enjoyed the hangman game! See you soon!")
+        return
+
 if __name__ == "__main__":
     main()
